@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: employee-backend
+    env: java
+    plan: free
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/*.jar"
+    branch: main
+    region: singapore
